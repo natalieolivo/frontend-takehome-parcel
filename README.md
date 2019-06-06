@@ -49,3 +49,14 @@ To see a sample request in action, run the following in your command line.
 ```bash
 curl http://localhost:3000/api/v1/search.json?query=rails
 ```
+
+Notes: 
+
+Areas I would like to focus on next:
+
+* refine the search matching logic
+* modularize the CSS
+* cache responses from the api call
+* render and format the results pulled from localStorage
+* Proper exceptions thrown from api calls
+* Clean up display logic when new results are rendered
