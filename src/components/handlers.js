@@ -21,6 +21,16 @@ function bindToApiCall(element) {
   return bind(element, callAPI);
 }
 
+function bindToEnter(method) {
+  document.addEventListener('keydown', function(e) {
+    console.log(`${e.keyCode}`);
+    if(e.keyCode == 13) {
+      e.preventDefault();
+      callAPI(event.target);
+    }
+  });
+}
+
 function bindToDataStore(element, data) {
   bind(element, setToDataStore, data);
 }
@@ -36,4 +46,4 @@ function setToDataStore(targetElement) {
   list.renderToDOM(list.createListTemplate(storedData));
 }
 
-export default { bindToApiCall, bindToDataStore };
+export default { bindToApiCall, bindToDataStore, bindToEnter };

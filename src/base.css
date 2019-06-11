@@ -26,7 +26,14 @@ body {
   color: #fff;
 }
 
-.listitem {
+.listitem-gem-name {
+  display: inline;
+  background-color: yellow;
+  opacity: .5;
+}
+
+.no-results,
+.listitem-gem {
   padding: 1em;
   margin: 1em 0;
   line-height: 1.4em;
