@@ -12,6 +12,7 @@ body {
 
 .search-input {
   padding: .8em 1em;  
+  font-size: 1em;  
 }
 
 .search-input,
@@ -19,17 +20,35 @@ body {
   border: solid 1px #eee;
 }
 
-.search-button {
-  text-transform: uppercase;
-  background: #888;
-  height: 30px;
+.search-button {  
+  background: #7b69b3;
+  border-radius: 20px;
+  height: 45px;
   color: #fff;
+  font-size: 1em;
 }
 
 .listitem-gem-name {
   display: inline;
+  text-transform: uppercase;
   background-color: yellow;
   opacity: .5;
+}
+
+.listitem-gem-link {
+  color: #fff;
+  font-size: .8em;
+  text-decoration: underline;
+  display: block;
+}
+
+.save-btn {
+  margin-top: 8px;
+  width: 40px;
+  color: #fff;
+  background: #71739c;
+  padding: .6em;
+  cursor: pointer;
 }
 
 .no-results,
@@ -37,5 +56,6 @@ body {
   padding: 1em;
   margin: 1em 0;
   line-height: 1.4em;
+  background: #999;
   border: solid 1px #000;
 }

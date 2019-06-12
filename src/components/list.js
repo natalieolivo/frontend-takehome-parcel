@@ -11,7 +11,7 @@ function createListTemplate(listItem) {
     <div class="listitem-gem-name">${listItem.name}</div>
     <div class="listitem-gem-downloads">${listItem.downloads}</div>
     <span class="listitem-gem-info">${listItem.info}</span>
-    <a href="${listItem.projectUri}">${listItem.projectUri}</a>
+    <a class="listitem-gem-link" href="${listItem.projectUri}">${listItem.projectUri}</a>
     <div class="listitem-save save-btn" data-name=${listItem.name}>Save</a></div>
   </div>
   `;
